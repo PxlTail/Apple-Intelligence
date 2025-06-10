@@ -1,0 +1,24 @@
+{
+  "name": "@pxltail/apple-intelligence",
+  "version": "0.0.1",
+  "description": "Unofficial Node.js wrapper for Apple's FoundationModels API.",
+  "main": "index.js",
+  "author": "PxlTail",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pxltail/Apple-Intelligence.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pxltail/Apple-Intelligence/issues"
+  },
+  "homepage": "https://github.com/pxltail/Apple-Intelligence#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0"
+  },
+  "bin": {
+    "apple-intelligence": "./bin/cli.js"
+  }
+}
