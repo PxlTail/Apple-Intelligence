@@ -1,6 +1,6 @@
 {
   "name": "@pxltail/apple-intelligence",
-  "version": "1.0.2-beta",
+  "version": "1.0.3-beta",
   "description": "Unofficial Node.js wrapper for Apple's FoundationModels API (AFM).",
   "main": "index.js",
   "author": "PxlTail",
