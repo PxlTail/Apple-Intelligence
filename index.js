@@ -2,6 +2,8 @@ import { spawn } from "child_process"
 import express, { response } from "express"
 import bodyParser from "body-parser";
 import path from "path";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const getSwiftResponse = (data, endpoint) => {
     return new Promise((resolve, reject) => {
