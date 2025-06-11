@@ -1,11 +1,11 @@
 import { spawn } from "child_process"
 import express, { response } from "express"
 import bodyParser from "body-parser";
+import path from "path";
 
 const getSwiftResponse = (data, endpoint) => {
     return new Promise((resolve, reject) => {
-        let process = spawn("swift", ["swift/" + endpoint + ".swift", JSON.stringify(data)]);
-
+        let process = spawn("swift", [path.join(__dirname, "swift", endpoint + ".swift"), JSON.stringify(data)]);
         let output = "";
         let error = "";
         let printedLength;
@@ -95,7 +95,7 @@ export default function AppleIntelligence(port) {
             res.setHeader("Connection", "keep-alive");
             res.flushHeaders();
 
-            const swiftProc = spawn("swift", ["swift/completions.swift", JSON.stringify({ ...swiftData, stream: true })]);
+            const swiftProc = spawn("swift", [path.join(__dirname, "swift/completions.swift"), JSON.stringify({ ...swiftData, stream: true })]);
 
             let accumulatedText = "";
 
