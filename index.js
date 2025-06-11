@@ -46,7 +46,7 @@ export default function AppleIntelligence(port) {
             model,
             messages,
             temperature,
-            max_completion_tokens,
+            max_tokens,
             stream
         } = req.body;
 
@@ -82,7 +82,7 @@ export default function AppleIntelligence(port) {
             prompt,
             generationOptions: {
                 temperature,
-                maximumResponseTokens: max_completion_tokens
+                maximumResponseTokens: max_tokens
             },
             transcript,
             instructions

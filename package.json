@@ -1,7 +1,7 @@
 {
   "name": "@pxltail/apple-intelligence",
-  "version": "0.0.1",
-  "description": "Unofficial Node.js wrapper for Apple's FoundationModels API.",
+  "version": "1.0.1-beta",
+  "description": "Unofficial Node.js wrapper for Apple's FoundationModels API (AFM).",
   "main": "index.js",
   "author": "PxlTail",
   "license": "MIT",
@@ -20,5 +20,26 @@
   },
   "bin": {
     "apple-intelligence": "./bin/cli.js"
-  }
+  },
+  "keywords": [
+    "apple",
+    "apple intelligence",
+    "foundation models",
+    "foundationmodels",
+    "ai",
+    "nodejs",
+    "local models",
+    "afm",
+    "macos",
+    "cli",
+    "api",
+    "openai",
+    "openai compatible",
+    "ajax",
+    "applegpt",
+    "afm-server",
+    "afm-on-device",
+    "macos tahoe",
+    "macos 26"
+  ]
 }

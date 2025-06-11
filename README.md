@@ -1,4 +1,5 @@
 # @pxltail/apple-intelligence
+**Version 1.0.0-beta**
 
 This is a basic library that lets you access Apple's new [`FoundationModels`] API(https://developer.apple.com/documentation/foundationmodels) via REST.
 
@@ -26,7 +27,7 @@ Starting the server is very simple. There are two options, depending on how you'
 
 - If you're using this in a Node.js script:
 ```js
-import AppleIntelligence from 'AppleIntelligence';
+import AppleIntelligence from '@pxltail/apple-intelligence';
 const PORT = 8080;
 
 const ai = AppleIntelligence(PORT);
@@ -53,7 +54,7 @@ Tool Calling|🔜|This is a feature that I will add in the next update to this l
 Web Search|❌|Apple doesn’t provide an API for the models to directly do this.
 Reasoning|❓|Apple infamously [dunked on](https://machinelearning.apple.com/research/illusion-of-thinking) reasoning models so this won't happen officially, but I’ll see if I can use prompting to convert the AFM models into reasoning models in the near future.
 Modifying guardrails|❓|This was confusing. The documentation was unclear on how to use the guardrails parameter, but if I can find more info I'll implement this.
-Image Generation|✅|Coming soon! Apple does provide an API for this and it will be implemented here.
+Image Generation|🔜|Coming soon! Apple does provide an API for this and it will be implemented here.
 |||
 |||
 Maximum Completion Tokens|✅| 
@@ -98,7 +99,7 @@ Expected response:
 }
 ```
 ## Issues
-If you find any issues with this project, let me know by @ing me on Twitter. ([@pxltail](https://twitter.com/@pxltail))
+This project is still in beta, just like the AI itself. If you find any issues with this project, let me know by @ing me on Twitter. ([@pxltail](https://twitter.com/@pxltail))
 
 This is my first project using Swift, so it *may* be buggy.. but any major errors have been fixed. If you do get an error, let me know how to reproduce it and I'll try my best to fix it.
 
