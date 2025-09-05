@@ -1,6 +1,8 @@
 # @pxltail/apple-intelligence
 **Version 1.0.4-beta**
 
+# okay so this doesn't work don't use it
+
 This is a basic library that lets you access Apple's new [FoundationModels] API(https://developer.apple.com/documentation/foundationmodels) via REST.
 
 As of writing, it's the only library that does so.
